@@ -6,14 +6,20 @@
     <title>Задание 32</title>
 </head>
 <body>
-    <script>
-        const value1 = "25.3";
-        const value2 = "786.867";
+<script>
+    const value1 = "25.3";
+    const value2 = "786.867";
 
+    const sum = parseFloat(value1) + parseFloat(value2);
 
-        const result = '';
+    let formatter = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    });
 
+    const result = formatter.format(sum);
 
-    </script>
+    console.log(result);
+</script>
 </body>
 </html>
