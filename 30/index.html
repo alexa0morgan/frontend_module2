@@ -8,6 +8,10 @@
 <body>
     <script>
         const text = 'всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!';
+        let text1 = text.at(0).toUpperCase() + text.slice(1).toLowerCase();
+        text1 = text1.replace('привет', 'пока');
+        console.log(text1.length);
+        console.log(text1.at(-1));
 
     </script>
 </body>
