@@ -6,9 +6,44 @@
     <title>Задание 33</title>
 </head>
 <body>
-    <script>
-        const age = 10
-        console.log('age: ', Number(age), Boolean(age), String(age));
-    </script>
+<script>
+    const age = 10
+    console.log('age: ', Number(age), Boolean(age), String(age));
+
+    const undef = undefined;
+    console.log('undef', Number(undef), Boolean(undef), String(undef));
+
+    const nul = null;
+    console.log('nul', Number(nul), Boolean(nul), String(nul));
+
+    const bool = true;
+    console.log('bool', Number(bool), Boolean(bool), String(bool));
+
+    const num = 1;
+    console.log('num', Number(num), Boolean(num), String(num));
+
+    const bigNum = 123456789012345678901234567890n;
+    console.log('bigNum', Number(bigNum), Boolean(bigNum), String(bigNum));
+
+    const symb = Symbol('g');
+    console.log('symb', Boolean(symb), String(symb));
+
+    const stri = 'str';
+    console.log('stri', Number(stri), Boolean(stri), String(stri))
+
+    const dict = {firstName: "Dima"};
+    console.log('dict', Number(dict), Boolean(dict), String(dict));
+
+    const arr = [1, 2, 3];
+    console.log('arr', Number(arr), Boolean(arr), String(arr));
+
+    const f = function () {
+    };
+    console.log('f', Number(f), Boolean(f), String(f));
+
+    const date = new Date("2023-11-09");
+    console.log('date', Number(date), Boolean(date), String(date));
+
+</script>
 </body>
 </html>
