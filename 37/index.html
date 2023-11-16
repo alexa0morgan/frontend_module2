@@ -6,8 +6,24 @@
     <title>Задание 37.1</title>
 </head>
 <body>
-    <script>
+<script>
+    function fD(name) {
+        return "Hello " + name + "!";
+    }
+    console.log(fD("Alex"));
 
-    </script>
+    const fEN = function (name) {
+        return "Hello " + name + "!";
+    };
+    console.log(fEN("Alex"));
+
+    const fEA1 = (name) => "Hello " + name + "!";
+    console.log(fEA1("Alex"));
+
+    const fEA2 = (name) => {
+        return "Hello " + name + "!";
+    };
+    console.log(fEA2("Alex"));
+</script>
 </body>
 </html>

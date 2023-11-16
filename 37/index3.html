@@ -6,10 +6,14 @@
     <title>Задание 37.3</title>
 </head>
 <body>
-    <script>
-        function statsArray() {
+<script>
+    function statsArray(...num) {
+        console.log(num.length);
+        console.log(Math.max(...num));
+        console.log(Math.min(...num));
+    }
 
-        }
-    </script>
+    statsArray(1, 10, 2, 5);
+</script>
 </body>
 </html>

@@ -6,10 +6,23 @@
     <title>Задание 37.2</title>
 </head>
 <body>
-    <script>
-        function season() {
+<script>
+    function season(month) {
+        if (month === 1) return "январь";
+        if (month === 2) return "февраль";
+        if (month === 3) return "март";
+        if (month === 4) return "апрель";
+        if (month === 5) return "май";
+        if (month === 6) return "июнь";
+        if (month === 7) return "июль";
+        if (month === 8) return "август";
+        if (month === 9) return "сентябрь";
+        if (month === 10) return "октябрь";
+        if (month === 11) return "ноябрь";
+        if (month === 12) return "декабрь";
+    }
 
-        }
-    </script>
+    console.log(season(1));
+</script>
 </body>
 </html>
