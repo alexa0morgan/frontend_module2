@@ -12,10 +12,10 @@
             age: 20,
             isAdult: true,
 
-            hello: () => console.log(`Hi ${this.firstName}`),
+            hello() {console.log(`Hi ${this.firstName}`)},
 
-            info: () => {
-                const split = function () {
+            info() {
+                const split = () => {
                     return `
                         Name: ${this.firstName}
                         Age: ${this.age}
@@ -25,6 +25,8 @@
                 console.log(split())
             },
         }
+
+        const obj = person;
 
         obj.hello();
         obj.info();
